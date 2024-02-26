@@ -1,0 +1,121 @@
+[
+    {
+        "id": "SSD_SERVICE_ID_sd_xD1ZK2GzZmyzfDTk",
+        "type": "tab",
+        "createdDate": "2024-02-26T10:02:52.368Z",
+        "label": "ok",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "ok",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_7Iozczp7fWVVnhaX",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_xD1ZK2GzZmyzfDTk",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "ping",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "entityId": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "sd_iLIuVc7zTqfjr4pC"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "ok",
+        "functionName": "sd_7Iozczp7fWVVnhaX"
+    },
+    {
+        "id": "sd_iLIuVc7zTqfjr4pC",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_xD1ZK2GzZmyzfDTk",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "literal",
+            "value": "'ping'",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "'ping'",
+            "send": "'ping'"
+        },
+        "dataModelIsArray": false,
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "entityId": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_iLIuVc7zTqfjr4pC",
+        "category": "HTTP",
+        "x": 340,
+        "y": 140,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ok",
+        "generated": true
+    }
+]

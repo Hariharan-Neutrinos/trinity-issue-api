@@ -4,7 +4,7 @@ const { registerInstrumentations } = require('@opentelemetry/instrumentation');
 const { ExpressInstrumentation } = require('@opentelemetry/instrumentation-express');
 const { MongoDBInstrumentation } = require('@opentelemetry/instrumentation-mongodb');
 const { Resource } = require('@opentelemetry/resources');
-const { ConsoleSpanExporter, SimpleSpanProcessor } = require('@opentelemetry/sdk-trace-base');
+const { SimpleSpanProcessor } = require('@opentelemetry/sdk-trace-base');
 const { NodeTracerProvider } = require('@opentelemetry/sdk-trace-node');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
 
@@ -20,10 +20,6 @@ const provider = new NodeTracerProvider({
         [SemanticResourceAttributes.SERVICE_NAME]: process.env.NEU_APP_NAME,
     }),
 });
-
-const exporter = new ConsoleSpanExporter();
-const processor = new SimpleSpanProcessor(exporter);
-provider.addSpanProcessor(processor);
 
 const collectorTraceExporter = new OTLPTraceExporter({
     url: process.env.NEU_TRACE_COLLECTOR_URL,

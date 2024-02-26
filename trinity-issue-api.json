@@ -1,0 +1,14 @@
+{
+    "displayName": "trinity-issue-api",
+    "appName": "trinity-issue-api",
+    "description": "trinity-issue-api",
+    "lastModified": "2024-02-26T06:58:23.696Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "apiOnly",
+    "templateName": "blank",
+    "createDate": "2024-02-26T05:17:48.837Z",
+    "analyticsId": "e9686c94-9641-d70c-dcfe-5ea62fe4306d",
+    "createdStudioVersion": "9.2.1",
+    "isCorrupt": false
+}

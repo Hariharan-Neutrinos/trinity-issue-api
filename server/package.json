@@ -1,7 +1,7 @@
 {
-    "name": "test-issue-api",
+    "name": "trinity-issue-api",
     "version": "1.0.0",
-    "studioVersion": "9.2.1",
+    "studioVersion": "9.2.2",
     "description": "Neutrinos Service Designer",
     "license": "ISC",
     "readmeFilename": "README.md",
